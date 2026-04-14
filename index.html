@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <style>
+    body {
+        font-family: sans-serif;
+        margin-left: 25%;
+        margin-right: 25%;
+    }
+
+    /* light and dark mode */
+    body {
+        background-color: #fff;
+        color: #000;
+    }
+    @media (prefers-color-scheme: dark) {
+        body {
+            background-color: #000;
+            color: #fff;
+        }
+    }
+
+  </style>
+</head>
+<body>
+  <p><b>April 14, 2025.</b> I've
+  discovered <a href="https://github.com/SakanaAI/ShinkaEvolve">ShinkaEvolve</a>
+  via Machine Learning Street Talks. The idea is to evolve a
+  population of programs to optimize a metric.
+  <p>John Koza explored this idea in the 90s with what he called
+  Genetic Programming. The idea is to have a population of
+  s-expressions (of course it was LISP back then), evaluate each
+  s-expression against a value function, and replace some portion of
+  the worst performing programs with mutated versions of the best
+  performers. Over time, the population as a whole wiggles towards
+  better performance.
+  <p>ShinkaEvolve leverages LLMs by giving them the task of
+  intelligently mutating the programs. This means you aren't
+  restricted to an s-expression tree; you can use any language the LLM
+  understands and tie in any library you need. This opens quite a lot
+  of options! ShinkaEvolve appears to use some sort of orchestration
+  to efficiently shepherd the population towards solutions. I'm still
+  exploring how it works.
+</body>
+</html>
