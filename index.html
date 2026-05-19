@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -18,12 +19,16 @@
             background-color: #000;
             color: #fff;
         }
+	a {
+	    color: #55f;
+	}
     }
 
   </style>
 </head>
 <body>
-  <p><b>April 14, 2025.</b> I've
+  <p><b>May 10, 2026.</b>I've discovered Reservoir Computing thanks to a <a href="https://www.youtube.com/watch?v=cDxtFtoQVNc">video by Artem Kirsanov</a> and <a href="https://autobencoder.com/2021-04-05-bucket/">a blog post by Ben Hell about a bucket of water</a>. I'm fascinated! The idea is to feed an input into a fixed, randomly initialized recurrent network (spiking or ANN) and only train the weights of a linear output layer. If it's setup correctly, the interactions of the random network nodes will create "higher order" features based on the input signal. Then the output layer's optimization function can decide which of these features are relevant to the target task (classificaion, regression, etc). But it doesn't have to be a digital network. A reservoir computers can be made from analog circuits, a bucket of water, or even a biological neural network such as <a href="https://www.nature.com/articles/s41928-023-01069-w">a brain organoid</a>. According to Jaeger, who came up with the Echo State Network variant, the network works best when it runs on "the edge of chaos". If it is this controlled chaos that makes it work, it raises the question: is human creativity also a result of our brains running at the edge of chaos?
+  <p><b>April 14, 2026.</b> I've
   discovered <a href="https://github.com/SakanaAI/ShinkaEvolve">ShinkaEvolve</a>
   via <a href="https://www.youtube.com/watch?v=EInEmGaMRLc">an
   episode</a> of Machine Learning Street Talks. The idea is to evolve
